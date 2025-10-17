@@ -16,9 +16,7 @@
     --font-body: 'Inter', sans-serif;
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-}
+
 
 
 
@@ -31,17 +29,19 @@ header {
     /* Largura de 100%*/
 
     height: 200px;
+    
 
 }
 
 /* slogan */
 h1 {
-
+    font-size: 4em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     color: white;
-
+    text-align: center;
     font-weight: 300;
+    
+    
 
 }
 
@@ -102,8 +102,11 @@ nav {
     background-image: linear-gradient(to left, #52e37d, blue);
 }
 
+
+
 img {
     width: 100%;
+    box-shadow: 2px 2px 5px black;
 }
 
 
@@ -124,12 +127,13 @@ section div {
     }
 
 /* sobre*/
-h2 {
+section h2 {
     color: white;
     background-image: linear-gradient(to right, #52e37d, blue);
-    font-size: 2em;
+    font-size: 1.1em;
     margin-top: 30px;
-    padding: 2px;
+    padding: 10px;
+    text-align: center;
     
 }
 
@@ -143,7 +147,7 @@ p {
 }
 
 /* video */
-.container {
+.container01 {
     width: 80%;
     margin: 50px auto;
 }
@@ -165,11 +169,7 @@ p {
 }
 
 
-body {
-    font-family: var(--font-body);
-    line-height: 1.6;
-    color: var(--text-color);
-}
+
 
 .container {
     max-width: 1200px;
@@ -181,15 +181,12 @@ h1,
 h2,
 h3 {
     font-family: var(--font-heading);
-    color: var(--primary-color);
+    color: white;
     margin-bottom: 0.5em;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 1.5em;
-    font-size: 2.5em;
-}
+
+
 
 /* --- HERO SECTION (TOPO) --- */
 .hero {
@@ -333,14 +330,14 @@ h2 {
     cursor: pointer;
 }
 
-/* --- FOOTER --- */
+/* --- FOOTER --- 
 footer {
     background-color: var(--primary-color);
     color: var(--white);
     text-align: center;
     padding: 20px 0;
     font-size: 0.9em;
-}
+} */                                                                                                                                                                                                                                                                                                                    
 
 /* --- Media Queries (Responsividade) --- */
 @media (max-width: 768px) {
@@ -368,18 +365,19 @@ footer {
 
 /* --- Container geral --- */
 .speakers-section {
-    padding: 2rem;
-    background: #fafafa;
+    
+    background: #ffffff;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #222;
 }
 
 /* --- Título centralizado --- */
 .speakers-section h2 {
+    padding: 10px;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.1em;
     margin-bottom: 2rem;
-    color: #111;
+    color: #ffffff;
 }
 
 /* --- Grid: 4 colunas lado a lado --- */
