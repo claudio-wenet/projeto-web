@@ -6,13 +6,26 @@
 
     box-sizing: border-box; }
 
+:root { /* cores*/
+    --primary-color: #004d40;
+    --secondary-color: #d84315;
+    --text-color: #333;
+    --light-bg: #f5f5f5;
+    --white: #fff;
+    --font-heading: 'Fraunces', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
 
 
 
 /* Cabeçalho*/
 header {
 
-    background-color: rgb(164, 211, 209);
+    background-image: linear-gradient( to right, blue, #52e37d);
 
     width: 100%;
     /* Largura de 100%*/
@@ -60,7 +73,7 @@ nav {
 
 }
 
-/* removi o efeito da bolinhas na lista do menu*/
+/* removi o efeito da bolinhas na lista d o menu*/
 #menu-horizontal {
     list-style: none; /*bolos (bolinhas) são removidas*/
     padding: 0;
@@ -78,16 +91,20 @@ nav {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 5px;
     transition: background .3s;
 }
 
 /* efeito  hover*/
 #menu-horizontal li a:hover {
-    background-color: #3fb165;
-   
-
+    color: #ffee00;
+    background-image: linear-gradient(to left, #52e37d, blue);
 }
 
+img {
+    width: 100%;
+}
 
 
 /* conteúdo, as div*/
@@ -97,7 +114,7 @@ section div {
     width: 80%;
 
     height: 250px;
-    background-color: #ccc;
+    /*background-color: #ccc;*/
     
     margin: 20px auto;
     /* esse ( auto ) deixa centralizado no centro da tela*/
@@ -105,3 +122,338 @@ section div {
     border-radius: 15px;
     
     }
+
+/* sobre*/
+h2 {
+    color: white;
+    background-image: linear-gradient(to right, #52e37d, blue);
+    font-size: 2em;
+    margin-top: 30px;
+    padding: 2px;
+    
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 1em;
+    background-color: lightblue;
+    font-size: 1.1em;
+    text-indent: 15px;
+}
+
+/* video */
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.video {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 56.25%;
+    
+}
+
+.iframe iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+}
+
+/* --- HERO SECTION (TOPO) --- */
+.hero {
+    /* ATENÇÃO: Altere 'sua-melhor-foto-montanha.jpg' para o nome da SUA imagem de topo */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('sua-melhor-foto-montanha.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 2em;
+    font-weight: 300;
+    color: var(--white);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b73812;
+}
+
+/* --- SEÇÕES DE CONTEÚDO --- */
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: var(--light-bg);
+}
+
+/* Cards de Turismo (Grid) */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Lista de Gastronomia */
+.list-gastronomia {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.list-gastronomia li {
+    background: var(--primary-color);
+    color: var(--white);
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: 400;
+}
+
+/* --- SEÇÃO DE EVENTOS --- */
+.eventos-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.evento-card {
+    background: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.evento-card h3 {
+    color: var(--secondary-color);
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* --- SEÇÃO DE GALERIA --- */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.03);
+    border: 3px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* --- Media Queries (Responsividade) --- */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .evento-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* ============================
+   Estilo da seção de palestrantes
+   ============================ */
+
+/* --- Container geral --- */
+.speakers-section {
+    padding: 2rem;
+    background: #fafafa;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #222;
+}
+
+/* --- Título centralizado --- */
+.speakers-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+/* --- Grid: 4 colunas lado a lado --- */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* quatro caixas lado a lado */
+    gap: 1.5rem;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Card de cada palestrante --- */
+.speaker-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+/* --- Efeito hover --- */
+.speaker-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    background: #fefefe;
+}
+
+/* --- Imagem do palestrante --- */
+.speaker-photo {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* --- Nome do palestrante --- */
+.speaker-name {
+    margin: 1rem 1rem 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+}
+
+/* --- Texto biográfico --- */
+.speaker-bio {
+    margin: 0 1rem 1.2rem 1rem;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 992px) {
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .speaker-name {
+        font-size: 1rem;
+    }
+
+    .speaker-bio {
+        font-size: 0.9rem;
+    }
+}
